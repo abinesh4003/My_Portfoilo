@@ -1,0 +1,84 @@
+/* Footer Styling */
+.footer {
+    background: #121212;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer Layout */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Footer Sections */
+.footer-content,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 0;
+}
+
+/* Footer Headings */
+.footer h2,
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #FFD700; /* Gold */
+}
+
+/* Footer Links */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFD700; /* Gold */
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #FFD700; /* Gold */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+}

@@ -1,0 +1,95 @@
+/* Education Section */
+.education-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, #ffcc00, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.3);
+}
+
+/* Timeline Icon */
+.timeline-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ffcc00, #ff5722);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: black;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+    margin-right: 20px;
+}
+
+/* Timeline Content */
+.timeline-content {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.timeline-content h3 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.timeline-content h4 {
+    font-size: 1.4rem;
+    color: #ff5722;
+    margin-top: 5px;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline-icon {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}

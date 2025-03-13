@@ -1,0 +1,139 @@
+/* Projects Section */
+.projects-section {
+    padding: 80px 10%;
+    background: #121212; /* Dark background */
+    color: white;
+    text-align: center;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffcc00;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Projects Container */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Individual Project Card */
+.project-card {
+    background: linear-gradient(135deg, #232526, #414345);
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(255, 204, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Project Content */
+.project-content {
+    text-align: left;
+}
+
+/* Project Title */
+.project-content h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+/* Project Description */
+.project-content p {
+    font-size: 1rem;
+    opacity: 0.85;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Technologies Used */
+.tech-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.tech-list li {
+    background: rgba(255, 204, 0, 0.2);
+    color: #ffcc00;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* View Project Button */
+.view-project {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.view-project:hover {
+    background: #e6b800;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 204, 0, 0.4);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

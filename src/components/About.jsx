@@ -53,7 +53,7 @@ const About = () => {
             <li>Java, Spring Boot, MySQL - Besant Technologies</li>
           </ul>
 
-          {/* Call to Action sdjfhsfsi*/}
+          {/* Call to Action */}
           <a href="/contact" className="cta-btn">Let's Work Together</a>
         </div>
       </div>
